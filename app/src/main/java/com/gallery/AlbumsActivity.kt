@@ -43,7 +43,7 @@ class AlbumsActivity : AppCompatActivity() {
 
     private fun showFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
-            .replace(R.id.container, fragment)
+            .add(R.id.container, fragment)
             .addToBackStack(null)
             .commit()
     }
